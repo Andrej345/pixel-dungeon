@@ -84,7 +84,7 @@ public class Terrain {
 	
 	public static final int[] flags = new int[256];
 	static {
-		flags[CHASM]		= AVOID	| PIT									| UNSTITCHABLE;
+		flags[CHASM]		= PASSABLE									| UNSTITCHABLE;
 		flags[EMPTY]		= PASSABLE;
 		flags[GRASS]		= PASSABLE | FLAMABLE;
 		flags[EMPTY_WELL]	= PASSABLE;
